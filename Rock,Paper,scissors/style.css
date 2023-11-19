@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(160,217,236,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    gap: 10px;
+    
+}
+body h2 {
+    color: rgb(120, 114, 114);
+    font-size: 28px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons button {
+    margin: 30px;
+}
+
+body .computer, .player {
+    font-size: 14px;
+}

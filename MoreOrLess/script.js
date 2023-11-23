@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         appendBtn.disabled = false
         input.value = ''
     })
-
+  
     let targetNumber = getRandomNumber()
     appendBtn.addEventListener('click', () => {
         // console.log(targetNumber, 'Target Number');
@@ -40,16 +40,28 @@ document.addEventListener('DOMContentLoaded', () => {
             if(playerTry < 1){
                 appendBtn.disabled = true
                 hintDiv.innerText = 'Unfortunately, you lost.'
-            } else {
+            }  
+             else {
                 if(targetNumber < +input.value) {
                     hintDiv.innerText = 'Your number is greater than the target.'
                 } 
                 if(targetNumber > +input.value) {
                     hintDiv.innerText = 'Your number is smaller than the target.'
                 } 
+
+            //     if(!isNaN(+input.value)) {
+            //         input.value = ''
+            //         // hintDiv.innerText = 'Please enter a valid number'
+            //    }
+               
             }
         
         }
+
     })
+
+    input.addEventListener('input', () => {
+        input.value = input.value.replace(/\D/g, ''); 
+    });
 
 })

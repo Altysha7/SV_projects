@@ -57,6 +57,12 @@ h2 {
 
 .points {
     font-size: 24px;
-    color: gray;
+    color: black;
     margin: 20px;
 }
+
+.resultBox {
+    padding: 10px;
+    border-radius: 5px;
+}
+
